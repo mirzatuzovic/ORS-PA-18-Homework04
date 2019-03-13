@@ -13,3 +13,25 @@
 * Use main() function to test your solution.
 ===================================================
 """
+
+def sum_digits(number):
+
+    if not isinstance(number,int):
+        return -1
+
+    sum = 0
+
+    for i in str(abs(number)):
+        sum += int(i)
+    return sum
+
+
+
+
+def main():
+
+    int_number = 1234
+    digit_sum = sum_digits(int_number)
+    print("Sum of digits for given numbers is: ", digit_sum)
+
+main()
