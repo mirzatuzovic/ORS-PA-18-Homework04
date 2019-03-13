@@ -15,3 +15,22 @@
 * Use main() function to test your solution.
 ===================================================
 """
+
+import math
+
+def area_of_circle(r):
+
+    if not isinstance(r,float):
+        return -1
+
+    return (abs(r)**2)*math.pi
+
+
+def main():
+
+    povrsina=area_of_circle(-5.8)
+    print(povrsina)
+
+    pass
+
+main()
